@@ -21,6 +21,7 @@ Place your SZS file into the SZS folder. If you want to use patches that use cus
 Example on how its meant to be done: 
 
 ![This is an image](https://cdn.discordapp.com/attachments/474651886855913484/952281874473050152/unknown.png)
+
 (.png files for the 10 Frame Gif MenuSingle)
 
 
