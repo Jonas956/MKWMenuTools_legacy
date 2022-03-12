@@ -18,6 +18,8 @@ You will need [Wiimms SZS Tools](https://szs.wiimm.de/) installed on your comput
 
 Place your SZS file into the SZS folder. If you want to use patches that use custom images drag into the Images folder after reading the instructions.txt
 
+It will automaticly convert your .png files into matching .tpl files. It will not extract the frames of a .gif file for you (at least as of now)
+
 Example on how its meant to be done: 
 
 ![This is an image](https://cdn.discordapp.com/attachments/474651886855913484/952281874473050152/unknown.png)
