@@ -32,6 +32,16 @@ namespace WinFormsApp1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MKWMenuTools));
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.metroSetTabControl1 = new MetroSet_UI.Controls.MetroSetTabControl();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.ComboBoxTitle = new MetroSet_UI.Controls.MetroSetComboBox();
+            this.btnNoSplitTitle = new MetroSet_UI.Controls.MetroSetButton();
+            this.btnFixTitle = new MetroSet_UI.Controls.MetroSetButton();
+            this.btnInvisBarsTitle = new MetroSet_UI.Controls.MetroSetButton();
+            this.btnRebuildTitle = new MetroSet_UI.Controls.MetroSetButton();
+            this.btnExtractTitle = new MetroSet_UI.Controls.MetroSetButton();
+            this.metroSetLabel10 = new MetroSet_UI.Controls.MetroSetLabel();
+            this.metroSetLabel11 = new MetroSet_UI.Controls.MetroSetLabel();
+            this.metroSetLabel12 = new MetroSet_UI.Controls.MetroSetLabel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.metroSetLabel17 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetTabControl2 = new MetroSet_UI.Controls.MetroSetTabControl();
@@ -81,16 +91,6 @@ namespace WinFormsApp1
             this.metroSetLabel21 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetLabel22 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetLabel23 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.ComboBoxTitle = new MetroSet_UI.Controls.MetroSetComboBox();
-            this.btnNoSplitTitle = new MetroSet_UI.Controls.MetroSetButton();
-            this.btnFixTitle = new MetroSet_UI.Controls.MetroSetButton();
-            this.btnInvisBarsTitle = new MetroSet_UI.Controls.MetroSetButton();
-            this.btnRebuildTitle = new MetroSet_UI.Controls.MetroSetButton();
-            this.btnExtractTitle = new MetroSet_UI.Controls.MetroSetButton();
-            this.metroSetLabel10 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.metroSetLabel11 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.metroSetLabel12 = new MetroSet_UI.Controls.MetroSetLabel();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnFixGlobe = new MetroSet_UI.Controls.MetroSetButton();
             this.btnInvisBarsGlobe = new MetroSet_UI.Controls.MetroSetButton();
@@ -115,6 +115,7 @@ namespace WinFormsApp1
             this.metroSetLabel24 = new MetroSet_UI.Controls.MetroSetLabel();
             this.lblDesc = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetTabControl1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.metroSetTabControl2.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -123,7 +124,6 @@ namespace WinFormsApp1
             this.tabPage8.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage12.SuspendLayout();
-            this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -160,12 +160,12 @@ namespace WinFormsApp1
             this.metroSetTabControl1.AnimateEasingType = MetroSet_UI.Enums.EasingType.CubeOut;
             this.metroSetTabControl1.AnimateTime = 200;
             this.metroSetTabControl1.BackgroundColor = System.Drawing.Color.White;
+            this.metroSetTabControl1.Controls.Add(this.tabPage4);
+            this.metroSetTabControl1.Controls.Add(this.tabPage5);
             this.metroSetTabControl1.Controls.Add(this.tabPage1);
             this.metroSetTabControl1.Controls.Add(this.tabPage8);
             this.metroSetTabControl1.Controls.Add(this.tabPage3);
             this.metroSetTabControl1.Controls.Add(this.tabPage12);
-            this.metroSetTabControl1.Controls.Add(this.tabPage5);
-            this.metroSetTabControl1.Controls.Add(this.tabPage4);
             this.metroSetTabControl1.Controls.Add(this.tabPage2);
             this.metroSetTabControl1.Controls.Add(this.tabPage6);
             this.metroSetTabControl1.IsDerivedStyle = true;
@@ -186,6 +186,248 @@ namespace WinFormsApp1
             this.metroSetTabControl1.UnselectedTextColor = System.Drawing.Color.Gray;
             this.metroSetTabControl1.UseAnimation = false;
             this.metroSetTabControl1.SelectedIndexChanged += new System.EventHandler(this.metroSetTabControl1_SelectedIndexChanged);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.ComboBoxTitle);
+            this.tabPage5.Controls.Add(this.btnNoSplitTitle);
+            this.tabPage5.Controls.Add(this.btnFixTitle);
+            this.tabPage5.Controls.Add(this.btnInvisBarsTitle);
+            this.tabPage5.Controls.Add(this.btnRebuildTitle);
+            this.tabPage5.Controls.Add(this.btnExtractTitle);
+            this.tabPage5.Controls.Add(this.metroSetLabel10);
+            this.tabPage5.Controls.Add(this.metroSetLabel11);
+            this.tabPage5.Controls.Add(this.metroSetLabel12);
+            this.tabPage5.Location = new System.Drawing.Point(4, 42);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(959, 303);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "TilteOptions";
+            // 
+            // ComboBoxTitle
+            // 
+            this.ComboBoxTitle.AllowDrop = true;
+            this.ComboBoxTitle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.ComboBoxTitle.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxTitle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.ComboBoxTitle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.ComboBoxTitle.CausesValidation = false;
+            this.ComboBoxTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ComboBoxTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.ComboBoxTitle.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.ComboBoxTitle.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxTitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ComboBoxTitle.FormattingEnabled = true;
+            this.ComboBoxTitle.IsDerivedStyle = true;
+            this.ComboBoxTitle.ItemHeight = 20;
+            this.ComboBoxTitle.Items.AddRange(new object[] {
+            "Title_G",
+            "Title_E",
+            "Title_F",
+            "Title_J",
+            "Title_I",
+            "Title_S",
+            "Title_U",
+            "Title_K",
+            "Title_Q",
+            "Title_M"});
+            this.ComboBoxTitle.Location = new System.Drawing.Point(62, 209);
+            this.ComboBoxTitle.Name = "ComboBoxTitle";
+            this.ComboBoxTitle.SelectedItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.ComboBoxTitle.SelectedItemForeColor = System.Drawing.Color.White;
+            this.ComboBoxTitle.Size = new System.Drawing.Size(121, 26);
+            this.ComboBoxTitle.Style = MetroSet_UI.Enums.Style.Light;
+            this.ComboBoxTitle.StyleManager = null;
+            this.ComboBoxTitle.TabIndex = 36;
+            this.ComboBoxTitle.ThemeAuthor = "Narwin";
+            this.ComboBoxTitle.ThemeName = "MetroLite";
+            this.ComboBoxTitle.MouseHover += new System.EventHandler(this.ComboBoxTitle_MouseHover);
+            // 
+            // btnNoSplitTitle
+            // 
+            this.btnNoSplitTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnNoSplitTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnNoSplitTitle.DisabledForeColor = System.Drawing.Color.Gray;
+            this.btnNoSplitTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNoSplitTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnNoSplitTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnNoSplitTitle.HoverTextColor = System.Drawing.Color.White;
+            this.btnNoSplitTitle.IsDerivedStyle = true;
+            this.btnNoSplitTitle.Location = new System.Drawing.Point(395, 116);
+            this.btnNoSplitTitle.Name = "btnNoSplitTitle";
+            this.btnNoSplitTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnNoSplitTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnNoSplitTitle.NormalTextColor = System.Drawing.Color.White;
+            this.btnNoSplitTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnNoSplitTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnNoSplitTitle.PressTextColor = System.Drawing.Color.White;
+            this.btnNoSplitTitle.Size = new System.Drawing.Size(242, 45);
+            this.btnNoSplitTitle.Style = MetroSet_UI.Enums.Style.Light;
+            this.btnNoSplitTitle.StyleManager = null;
+            this.btnNoSplitTitle.TabIndex = 31;
+            this.btnNoSplitTitle.Text = "No split Title Screen";
+            this.btnNoSplitTitle.ThemeAuthor = "Narwin";
+            this.btnNoSplitTitle.ThemeName = "MetroLite";
+            this.btnNoSplitTitle.Click += new System.EventHandler(this.btnNoSplitTitle_click);
+            this.btnNoSplitTitle.MouseHover += new System.EventHandler(this.btnNoSplitTitle_MouseHover);
+            // 
+            // btnFixTitle
+            // 
+            this.btnFixTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnFixTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnFixTitle.DisabledForeColor = System.Drawing.Color.Gray;
+            this.btnFixTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFixTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnFixTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnFixTitle.HoverTextColor = System.Drawing.Color.White;
+            this.btnFixTitle.IsDerivedStyle = true;
+            this.btnFixTitle.Location = new System.Drawing.Point(689, 65);
+            this.btnFixTitle.Name = "btnFixTitle";
+            this.btnFixTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnFixTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnFixTitle.NormalTextColor = System.Drawing.Color.White;
+            this.btnFixTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnFixTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnFixTitle.PressTextColor = System.Drawing.Color.White;
+            this.btnFixTitle.Size = new System.Drawing.Size(242, 45);
+            this.btnFixTitle.Style = MetroSet_UI.Enums.Style.Light;
+            this.btnFixTitle.StyleManager = null;
+            this.btnFixTitle.TabIndex = 30;
+            this.btnFixTitle.Text = "Fix Title";
+            this.btnFixTitle.ThemeAuthor = "Narwin";
+            this.btnFixTitle.ThemeName = "MetroLite";
+            this.btnFixTitle.Click += new System.EventHandler(this.btnFixTitle_Click);
+            this.btnFixTitle.MouseHover += new System.EventHandler(this.btnFixTitle_MouseHover);
+            // 
+            // btnInvisBarsTitle
+            // 
+            this.btnInvisBarsTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnInvisBarsTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnInvisBarsTitle.DisabledForeColor = System.Drawing.Color.Gray;
+            this.btnInvisBarsTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnInvisBarsTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnInvisBarsTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnInvisBarsTitle.HoverTextColor = System.Drawing.Color.White;
+            this.btnInvisBarsTitle.IsDerivedStyle = true;
+            this.btnInvisBarsTitle.Location = new System.Drawing.Point(395, 65);
+            this.btnInvisBarsTitle.Name = "btnInvisBarsTitle";
+            this.btnInvisBarsTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnInvisBarsTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnInvisBarsTitle.NormalTextColor = System.Drawing.Color.White;
+            this.btnInvisBarsTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnInvisBarsTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnInvisBarsTitle.PressTextColor = System.Drawing.Color.White;
+            this.btnInvisBarsTitle.Size = new System.Drawing.Size(242, 45);
+            this.btnInvisBarsTitle.Style = MetroSet_UI.Enums.Style.Light;
+            this.btnInvisBarsTitle.StyleManager = null;
+            this.btnInvisBarsTitle.TabIndex = 26;
+            this.btnInvisBarsTitle.Text = "Invisible bars";
+            this.btnInvisBarsTitle.ThemeAuthor = "Narwin";
+            this.btnInvisBarsTitle.ThemeName = "MetroLite";
+            this.btnInvisBarsTitle.Click += new System.EventHandler(this.btnInvisBarsTitle_Click);
+            this.btnInvisBarsTitle.MouseHover += new System.EventHandler(this.btnInvisBarsTitle_MouseHover);
+            // 
+            // btnRebuildTitle
+            // 
+            this.btnRebuildTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnRebuildTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnRebuildTitle.DisabledForeColor = System.Drawing.Color.Gray;
+            this.btnRebuildTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRebuildTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnRebuildTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnRebuildTitle.HoverTextColor = System.Drawing.Color.White;
+            this.btnRebuildTitle.IsDerivedStyle = true;
+            this.btnRebuildTitle.Location = new System.Drawing.Point(27, 116);
+            this.btnRebuildTitle.Name = "btnRebuildTitle";
+            this.btnRebuildTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnRebuildTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnRebuildTitle.NormalTextColor = System.Drawing.Color.White;
+            this.btnRebuildTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnRebuildTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnRebuildTitle.PressTextColor = System.Drawing.Color.White;
+            this.btnRebuildTitle.Size = new System.Drawing.Size(242, 45);
+            this.btnRebuildTitle.Style = MetroSet_UI.Enums.Style.Light;
+            this.btnRebuildTitle.StyleManager = null;
+            this.btnRebuildTitle.TabIndex = 25;
+            this.btnRebuildTitle.Text = "Rebuild Title";
+            this.btnRebuildTitle.ThemeAuthor = "Narwin";
+            this.btnRebuildTitle.ThemeName = "MetroLite";
+            this.btnRebuildTitle.Click += new System.EventHandler(this.btnRebuildTitle_Click);
+            this.btnRebuildTitle.MouseHover += new System.EventHandler(this.btnRebuildTitle_MouseHover);
+            // 
+            // btnExtractTitle
+            // 
+            this.btnExtractTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnExtractTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnExtractTitle.DisabledForeColor = System.Drawing.Color.Gray;
+            this.btnExtractTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExtractTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnExtractTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.btnExtractTitle.HoverTextColor = System.Drawing.Color.White;
+            this.btnExtractTitle.IsDerivedStyle = true;
+            this.btnExtractTitle.Location = new System.Drawing.Point(27, 65);
+            this.btnExtractTitle.Name = "btnExtractTitle";
+            this.btnExtractTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnExtractTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.btnExtractTitle.NormalTextColor = System.Drawing.Color.White;
+            this.btnExtractTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnExtractTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.btnExtractTitle.PressTextColor = System.Drawing.Color.White;
+            this.btnExtractTitle.Size = new System.Drawing.Size(242, 45);
+            this.btnExtractTitle.Style = MetroSet_UI.Enums.Style.Light;
+            this.btnExtractTitle.StyleManager = null;
+            this.btnExtractTitle.TabIndex = 24;
+            this.btnExtractTitle.Text = "Extract Title";
+            this.btnExtractTitle.ThemeAuthor = "Narwin";
+            this.btnExtractTitle.ThemeName = "MetroLite";
+            this.btnExtractTitle.Click += new System.EventHandler(this.btnExtractTitle_Click);
+            this.btnExtractTitle.MouseHover += new System.EventHandler(this.btnExtractTitle_MouseHover);
+            // 
+            // metroSetLabel10
+            // 
+            this.metroSetLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.metroSetLabel10.IsDerivedStyle = true;
+            this.metroSetLabel10.Location = new System.Drawing.Point(27, 39);
+            this.metroSetLabel10.Name = "metroSetLabel10";
+            this.metroSetLabel10.Size = new System.Drawing.Size(242, 23);
+            this.metroSetLabel10.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetLabel10.StyleManager = null;
+            this.metroSetLabel10.TabIndex = 23;
+            this.metroSetLabel10.Text = "Basic";
+            this.metroSetLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroSetLabel10.ThemeAuthor = "Narwin";
+            this.metroSetLabel10.ThemeName = "MetroLite";
+            // 
+            // metroSetLabel11
+            // 
+            this.metroSetLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.metroSetLabel11.IsDerivedStyle = true;
+            this.metroSetLabel11.Location = new System.Drawing.Point(689, 39);
+            this.metroSetLabel11.Name = "metroSetLabel11";
+            this.metroSetLabel11.Size = new System.Drawing.Size(242, 23);
+            this.metroSetLabel11.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetLabel11.StyleManager = null;
+            this.metroSetLabel11.TabIndex = 22;
+            this.metroSetLabel11.Text = "Tools";
+            this.metroSetLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroSetLabel11.ThemeAuthor = "Narwin";
+            this.metroSetLabel11.ThemeName = "MetroLite";
+            // 
+            // metroSetLabel12
+            // 
+            this.metroSetLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.metroSetLabel12.IsDerivedStyle = true;
+            this.metroSetLabel12.Location = new System.Drawing.Point(395, 39);
+            this.metroSetLabel12.Name = "metroSetLabel12";
+            this.metroSetLabel12.Size = new System.Drawing.Size(242, 23);
+            this.metroSetLabel12.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetLabel12.StyleManager = null;
+            this.metroSetLabel12.TabIndex = 21;
+            this.metroSetLabel12.Text = "Customization";
+            this.metroSetLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroSetLabel12.ThemeAuthor = "Narwin";
+            this.metroSetLabel12.ThemeName = "MetroLite";
             // 
             // tabPage1
             // 
@@ -1286,248 +1528,6 @@ namespace WinFormsApp1
             this.metroSetLabel23.ThemeAuthor = "Narwin";
             this.metroSetLabel23.ThemeName = "MetroLite";
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.ComboBoxTitle);
-            this.tabPage5.Controls.Add(this.btnNoSplitTitle);
-            this.tabPage5.Controls.Add(this.btnFixTitle);
-            this.tabPage5.Controls.Add(this.btnInvisBarsTitle);
-            this.tabPage5.Controls.Add(this.btnRebuildTitle);
-            this.tabPage5.Controls.Add(this.btnExtractTitle);
-            this.tabPage5.Controls.Add(this.metroSetLabel10);
-            this.tabPage5.Controls.Add(this.metroSetLabel11);
-            this.tabPage5.Controls.Add(this.metroSetLabel12);
-            this.tabPage5.Location = new System.Drawing.Point(4, 42);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(959, 303);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "TilteOptions";
-            // 
-            // ComboBoxTitle
-            // 
-            this.ComboBoxTitle.AllowDrop = true;
-            this.ComboBoxTitle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.ComboBoxTitle.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxTitle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ComboBoxTitle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.ComboBoxTitle.CausesValidation = false;
-            this.ComboBoxTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.ComboBoxTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.ComboBoxTitle.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.ComboBoxTitle.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxTitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ComboBoxTitle.FormattingEnabled = true;
-            this.ComboBoxTitle.IsDerivedStyle = true;
-            this.ComboBoxTitle.ItemHeight = 20;
-            this.ComboBoxTitle.Items.AddRange(new object[] {
-            "Title_G",
-            "Title_E",
-            "Title_F",
-            "Title_J",
-            "Title_I",
-            "Title_S",
-            "Title_U",
-            "Title_K",
-            "Title_Q",
-            "Title_M"});
-            this.ComboBoxTitle.Location = new System.Drawing.Point(62, 209);
-            this.ComboBoxTitle.Name = "ComboBoxTitle";
-            this.ComboBoxTitle.SelectedItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.ComboBoxTitle.SelectedItemForeColor = System.Drawing.Color.White;
-            this.ComboBoxTitle.Size = new System.Drawing.Size(121, 26);
-            this.ComboBoxTitle.Style = MetroSet_UI.Enums.Style.Light;
-            this.ComboBoxTitle.StyleManager = null;
-            this.ComboBoxTitle.TabIndex = 36;
-            this.ComboBoxTitle.ThemeAuthor = "Narwin";
-            this.ComboBoxTitle.ThemeName = "MetroLite";
-            this.ComboBoxTitle.MouseHover += new System.EventHandler(this.ComboBoxTitle_MouseHover);
-            // 
-            // btnNoSplitTitle
-            // 
-            this.btnNoSplitTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnNoSplitTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnNoSplitTitle.DisabledForeColor = System.Drawing.Color.Gray;
-            this.btnNoSplitTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnNoSplitTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnNoSplitTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnNoSplitTitle.HoverTextColor = System.Drawing.Color.White;
-            this.btnNoSplitTitle.IsDerivedStyle = true;
-            this.btnNoSplitTitle.Location = new System.Drawing.Point(395, 116);
-            this.btnNoSplitTitle.Name = "btnNoSplitTitle";
-            this.btnNoSplitTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnNoSplitTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnNoSplitTitle.NormalTextColor = System.Drawing.Color.White;
-            this.btnNoSplitTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnNoSplitTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnNoSplitTitle.PressTextColor = System.Drawing.Color.White;
-            this.btnNoSplitTitle.Size = new System.Drawing.Size(242, 45);
-            this.btnNoSplitTitle.Style = MetroSet_UI.Enums.Style.Light;
-            this.btnNoSplitTitle.StyleManager = null;
-            this.btnNoSplitTitle.TabIndex = 31;
-            this.btnNoSplitTitle.Text = "No split Title Screen";
-            this.btnNoSplitTitle.ThemeAuthor = "Narwin";
-            this.btnNoSplitTitle.ThemeName = "MetroLite";
-            this.btnNoSplitTitle.Click += new System.EventHandler(this.btnNoSplitTitle_click);
-            this.btnNoSplitTitle.MouseHover += new System.EventHandler(this.btnNoSplitTitle_MouseHover);
-            // 
-            // btnFixTitle
-            // 
-            this.btnFixTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnFixTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnFixTitle.DisabledForeColor = System.Drawing.Color.Gray;
-            this.btnFixTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnFixTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnFixTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnFixTitle.HoverTextColor = System.Drawing.Color.White;
-            this.btnFixTitle.IsDerivedStyle = true;
-            this.btnFixTitle.Location = new System.Drawing.Point(689, 65);
-            this.btnFixTitle.Name = "btnFixTitle";
-            this.btnFixTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnFixTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnFixTitle.NormalTextColor = System.Drawing.Color.White;
-            this.btnFixTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnFixTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnFixTitle.PressTextColor = System.Drawing.Color.White;
-            this.btnFixTitle.Size = new System.Drawing.Size(242, 45);
-            this.btnFixTitle.Style = MetroSet_UI.Enums.Style.Light;
-            this.btnFixTitle.StyleManager = null;
-            this.btnFixTitle.TabIndex = 30;
-            this.btnFixTitle.Text = "Fix Title";
-            this.btnFixTitle.ThemeAuthor = "Narwin";
-            this.btnFixTitle.ThemeName = "MetroLite";
-            this.btnFixTitle.Click += new System.EventHandler(this.btnFixTitle_Click);
-            this.btnFixTitle.MouseHover += new System.EventHandler(this.btnFixTitle_MouseHover);
-            // 
-            // btnInvisBarsTitle
-            // 
-            this.btnInvisBarsTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnInvisBarsTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnInvisBarsTitle.DisabledForeColor = System.Drawing.Color.Gray;
-            this.btnInvisBarsTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnInvisBarsTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnInvisBarsTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnInvisBarsTitle.HoverTextColor = System.Drawing.Color.White;
-            this.btnInvisBarsTitle.IsDerivedStyle = true;
-            this.btnInvisBarsTitle.Location = new System.Drawing.Point(395, 65);
-            this.btnInvisBarsTitle.Name = "btnInvisBarsTitle";
-            this.btnInvisBarsTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnInvisBarsTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnInvisBarsTitle.NormalTextColor = System.Drawing.Color.White;
-            this.btnInvisBarsTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnInvisBarsTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnInvisBarsTitle.PressTextColor = System.Drawing.Color.White;
-            this.btnInvisBarsTitle.Size = new System.Drawing.Size(242, 45);
-            this.btnInvisBarsTitle.Style = MetroSet_UI.Enums.Style.Light;
-            this.btnInvisBarsTitle.StyleManager = null;
-            this.btnInvisBarsTitle.TabIndex = 26;
-            this.btnInvisBarsTitle.Text = "Invisible bars";
-            this.btnInvisBarsTitle.ThemeAuthor = "Narwin";
-            this.btnInvisBarsTitle.ThemeName = "MetroLite";
-            this.btnInvisBarsTitle.Click += new System.EventHandler(this.btnInvisBarsTitle_Click);
-            this.btnInvisBarsTitle.MouseHover += new System.EventHandler(this.btnInvisBarsTitle_MouseHover);
-            // 
-            // btnRebuildTitle
-            // 
-            this.btnRebuildTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnRebuildTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnRebuildTitle.DisabledForeColor = System.Drawing.Color.Gray;
-            this.btnRebuildTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnRebuildTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnRebuildTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnRebuildTitle.HoverTextColor = System.Drawing.Color.White;
-            this.btnRebuildTitle.IsDerivedStyle = true;
-            this.btnRebuildTitle.Location = new System.Drawing.Point(27, 116);
-            this.btnRebuildTitle.Name = "btnRebuildTitle";
-            this.btnRebuildTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnRebuildTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnRebuildTitle.NormalTextColor = System.Drawing.Color.White;
-            this.btnRebuildTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnRebuildTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnRebuildTitle.PressTextColor = System.Drawing.Color.White;
-            this.btnRebuildTitle.Size = new System.Drawing.Size(242, 45);
-            this.btnRebuildTitle.Style = MetroSet_UI.Enums.Style.Light;
-            this.btnRebuildTitle.StyleManager = null;
-            this.btnRebuildTitle.TabIndex = 25;
-            this.btnRebuildTitle.Text = "Rebuild Title";
-            this.btnRebuildTitle.ThemeAuthor = "Narwin";
-            this.btnRebuildTitle.ThemeName = "MetroLite";
-            this.btnRebuildTitle.Click += new System.EventHandler(this.btnRebuildTitle_Click);
-            this.btnRebuildTitle.MouseHover += new System.EventHandler(this.btnRebuildTitle_MouseHover);
-            // 
-            // btnExtractTitle
-            // 
-            this.btnExtractTitle.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnExtractTitle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnExtractTitle.DisabledForeColor = System.Drawing.Color.Gray;
-            this.btnExtractTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExtractTitle.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnExtractTitle.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btnExtractTitle.HoverTextColor = System.Drawing.Color.White;
-            this.btnExtractTitle.IsDerivedStyle = true;
-            this.btnExtractTitle.Location = new System.Drawing.Point(27, 65);
-            this.btnExtractTitle.Name = "btnExtractTitle";
-            this.btnExtractTitle.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnExtractTitle.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btnExtractTitle.NormalTextColor = System.Drawing.Color.White;
-            this.btnExtractTitle.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnExtractTitle.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btnExtractTitle.PressTextColor = System.Drawing.Color.White;
-            this.btnExtractTitle.Size = new System.Drawing.Size(242, 45);
-            this.btnExtractTitle.Style = MetroSet_UI.Enums.Style.Light;
-            this.btnExtractTitle.StyleManager = null;
-            this.btnExtractTitle.TabIndex = 24;
-            this.btnExtractTitle.Text = "Extract Title";
-            this.btnExtractTitle.ThemeAuthor = "Narwin";
-            this.btnExtractTitle.ThemeName = "MetroLite";
-            this.btnExtractTitle.Click += new System.EventHandler(this.btnExtractTitle_Click);
-            this.btnExtractTitle.MouseHover += new System.EventHandler(this.btnExtractTitle_MouseHover);
-            // 
-            // metroSetLabel10
-            // 
-            this.metroSetLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.metroSetLabel10.IsDerivedStyle = true;
-            this.metroSetLabel10.Location = new System.Drawing.Point(27, 39);
-            this.metroSetLabel10.Name = "metroSetLabel10";
-            this.metroSetLabel10.Size = new System.Drawing.Size(242, 23);
-            this.metroSetLabel10.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetLabel10.StyleManager = null;
-            this.metroSetLabel10.TabIndex = 23;
-            this.metroSetLabel10.Text = "Basic";
-            this.metroSetLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroSetLabel10.ThemeAuthor = "Narwin";
-            this.metroSetLabel10.ThemeName = "MetroLite";
-            // 
-            // metroSetLabel11
-            // 
-            this.metroSetLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.metroSetLabel11.IsDerivedStyle = true;
-            this.metroSetLabel11.Location = new System.Drawing.Point(689, 39);
-            this.metroSetLabel11.Name = "metroSetLabel11";
-            this.metroSetLabel11.Size = new System.Drawing.Size(242, 23);
-            this.metroSetLabel11.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetLabel11.StyleManager = null;
-            this.metroSetLabel11.TabIndex = 22;
-            this.metroSetLabel11.Text = "Tools";
-            this.metroSetLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroSetLabel11.ThemeAuthor = "Narwin";
-            this.metroSetLabel11.ThemeName = "MetroLite";
-            // 
-            // metroSetLabel12
-            // 
-            this.metroSetLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.metroSetLabel12.IsDerivedStyle = true;
-            this.metroSetLabel12.Location = new System.Drawing.Point(395, 39);
-            this.metroSetLabel12.Name = "metroSetLabel12";
-            this.metroSetLabel12.Size = new System.Drawing.Size(242, 23);
-            this.metroSetLabel12.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetLabel12.StyleManager = null;
-            this.metroSetLabel12.TabIndex = 21;
-            this.metroSetLabel12.Text = "Customization";
-            this.metroSetLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroSetLabel12.ThemeAuthor = "Narwin";
-            this.metroSetLabel12.ThemeName = "MetroLite";
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.btnFixGlobe);
@@ -2036,6 +2036,7 @@ namespace WinFormsApp1
             this.Text = "MKW Menu Tools";
             this.Load += new System.EventHandler(this.MKWMenuTools_Load);
             this.metroSetTabControl1.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.metroSetTabControl2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
@@ -2044,7 +2045,6 @@ namespace WinFormsApp1
             this.tabPage8.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);

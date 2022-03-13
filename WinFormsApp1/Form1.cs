@@ -238,7 +238,7 @@ namespace WinFormsApp1
 
             strExtractGlobe = "/c wszst ex .\\SZS\\Globe.szs";
 
-            System.Diagnostics.Process.Start("CMD.exe", strExtractGlobe);
+            System.Diagnostics.Process.Start("powershell.exe", strExtractGlobe);
         }
 
         private void btnRebuildGlobe_Click(object sender, EventArgs e) //Rebuild Globe
@@ -247,7 +247,7 @@ namespace WinFormsApp1
 
             strRebuildGlobe = "/c wszst c -o .\\SZS\\Globe.d";
 
-            System.Diagnostics.Process.Start("CMD.exe", strRebuildGlobe);
+            System.Diagnostics.Process.Start("powershell.exe", strRebuildGlobe);
         }
 
         private void btnInvisBarsGlobe_Click(object sender, EventArgs e) //Invisible Menu Bars Globe
@@ -365,7 +365,7 @@ namespace WinFormsApp1
                 "xcopy /Y /E .\\Images\\Title\\tt_title_screen_peachi.tpl .\\SZS\\Title.d\\title\\timg\\;" +
                 "rename-item .\\Images\\Title\\Title6Boke.png tt_title_screen_peachi_bokeboke.tpl.png;" +
                 "wimgt encode .\\Images\\Title\\tt_title_screen_peachi_bokeboke.tpl.png;" +
-                "xcopy /Y /E .\\Images\\Title\\tt_title_screen_peachi_bokeboke.tpl .\\SZS\\Title.d\\title\\timg\\";
+                "xcopy /Y /E .\\Images\\Title\\tt_title_screen_peachi_bokeboke.tpl .\\SZS\\Title.d\\title\\timg\\; pause";
 
             System.Diagnostics.Process.Start("powershell.exe", strTitleIMG);
            
@@ -376,7 +376,7 @@ namespace WinFormsApp1
 
             strTitleNoSplit = "/c wszst ex .\\SZS\\" + strTitleX + ".szs;" +
                 "xcopy /Y /E .\\Patches\\Title\\NoSplitTitlePatch\\X\\ .\\SZS\\" + strTitleX + ".d;" +
-                "wszst c -o .\\SZS\\" + strTitleX + ".d";
+                "wszst c -o .\\SZS\\" + strTitleX + ".d; pause";
             System.Diagnostics.Process.Start("powershell.exe", strTitleNoSplit);
 
         }
