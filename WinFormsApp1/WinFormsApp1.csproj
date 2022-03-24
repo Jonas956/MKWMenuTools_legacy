@@ -4,6 +4,47 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <Win32Resource />
+    <AssemblyName>MKWMenuTools</AssemblyName>
+    <RootNamespace>MKWMenuTools</RootNamespace>
+    <Version>1</Version>
+    <Authors>Jonas43</Authors>
+    <Description>A Tool to make MKW Modding easier</Description>
+    <Copyright>Jonas43</Copyright>
+    <PackageIcon>tex1_48x48_56e874c48f608891_5.png</PackageIcon>
+    <PackageIconUrl />
+    <PackageProjectUrl>https://github.com/Jonas956/MKWMenuTools</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Jonas956/MKWMenuTools</RepositoryUrl>
+    <PackageTags></PackageTags>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="5.15.4" />
+    <PackageReference Include="MetroSet_UI" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\tex1_48x48_56e874c48f608891_5.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
