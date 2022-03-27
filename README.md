@@ -4,7 +4,7 @@ MKWMenuTools is a Tool to automaticly apply patches to your Mario Kart Wii SZS f
 
 Please note that this is NOT an editor. It will replace existing files inside of your SZS file with the templates and images that you provide.
 
-This means if you change the Live View Screen it will replace the live.brlyt and live.tpl inside of your Race.szs
+This means if you change the Live View Screen for example it will replace the live.brlyt and live.tpl inside of your Race.szs
 
 It automaticly will do stuff such as making a Gif MenuSingle, repairing your SZS file etc.
 
