@@ -1,5 +1,8 @@
 # MKWMenuTools
 
+#!!This requieres .Net Core to run! Download it here from Microsoft:!!
+https://www.youtube.com/watch?v=UkK_SzvLb0g
+
 MKWMenuTools is a Tool to automaticly apply patches to your Mario Kart Wii SZS file.
 
 Please note that this is NOT an editor. It will replace existing files inside of your SZS file with the templates and images that you provide.
