@@ -1,7 +1,7 @@
 # MKWMenuTools
 
 !!This requieres .Net Core to run! Download it here from Microsoft:!!
-https://www.youtube.com/watch?v=UkK_SzvLb0g
+(https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-3.1.26-windows-x64-installer)
 
 MKWMenuTools is a Tool to automaticly apply patches to your Mario Kart Wii SZS file.
 
