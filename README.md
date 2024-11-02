@@ -41,7 +41,7 @@ If have any requests on what to add  or have any issues with the tool please do 
 
 [Dxrk](https://www.youtube.com/c/Dxrkbrownhash) for creating the NoSplitTitle template
 
-[Jonas43](https://www.youtube.com/channel/UC81wrBeJzkfAvePnRY74lTw) for creating this tool and all the other patches
+Me for creating this tool and all the other patches
 
 MetroSet_UI 2.0.0 by [Narwin](https://github.com/N-a-r-w-i-n)
 
